@@ -48,10 +48,9 @@ const resolvers = {
     },
     saveScore: async (parent, { levelScore }, context) => {
       if (context.user) {
-        console.log(levelScore);
         const updatedUserScore = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $addToSet: {scores: levelScore} },
+          { $addToSet: {savedScore: levelScore} },
           { new: true }
         );
         return updatedUserScore;

@@ -5,7 +5,7 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    scores: [Score]
+    savedScore: [Score]
   }
   type Score {
     _id: ID
