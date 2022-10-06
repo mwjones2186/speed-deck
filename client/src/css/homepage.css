@@ -2,8 +2,32 @@ body {
     background-image: url() ;
 }
 
-.video {
-    position: fixed;
+.hero-header {
+    font-size: 65px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.80), transparent);
+    color: white;
+    min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+#myVideo {
     z-index: -1;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
+
