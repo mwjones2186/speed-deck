@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import '../css/login-signup.css';
+import {GoogleSignin} from './Google-login'
 
 export const Login = () => {
     return (
@@ -12,6 +13,8 @@ export const Login = () => {
                         <input type='text' placeholder="Password" id="password" />
                         <button className="signInBtn" type="submit">Sign In</button>
                     </form>
+                    <br/>
+                    <GoogleSignin></GoogleSignin>
                 </Col>
                 <Col lg={6} className="signup">
                     <h1>New Here?</h1>
