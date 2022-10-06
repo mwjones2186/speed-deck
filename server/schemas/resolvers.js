@@ -20,8 +20,7 @@ const resolvers = {
 
       return userData;
     },
-    // users???
-    // user???
+   
   },
 
   Mutation: {
