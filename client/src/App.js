@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Navigation } from "./components/Navigation";
-import { Home } from './components/Home';
-import { Leaderboard } from './components/Leaderboard';
-import { Profile } from './components/Profile';
-import { Progress } from './components/Progress';
-import { Login } from './components/Login-signup'
+import { Navigation } from "./Pages/Navigation";
+import { Home } from './Pages/Home';
+import { Leaderboard } from './Pages/Leaderboard';
+import { Profile } from './Pages/Profile';
+import { Progress } from './Pages/Progress';
+import { Login } from './Pages/Login-signup'
 import './css/app.css'
 
 

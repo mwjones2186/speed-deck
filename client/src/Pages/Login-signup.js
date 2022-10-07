@@ -18,6 +18,7 @@ export const Login = () => {
                     <p>Sign up and have fun playing all of our math related games!</p>
                     <button>Sign up</button>
                 </Col>
+               
             </Row>
         </Container>
     )
