@@ -1,12 +1,13 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Navigation } from "./components/Navigation";
-import { Home } from './components/Home';
-import { Leaderboard } from './components/Leaderboard';
-import { Profile } from './components/Profile';
-import { Progress } from './components/Progress';
-import { Login } from './components/Login-signup'
+import  Navigation from "./components/Navigation";
+import Home from './pages/Home'
+import Leaderboard from './pages/Leaderboard'
+import Profile from './pages/Profile'
+import  Progress from "./pages/Progress";
+import Login from "./pages/Login-signup";
+
 import './css/app.css'
+import Gameplay from "./pages/GameScreen";
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/leaderboard" element={<Leaderboard />} />
                     <Route path="/profile" element={<Profile />} />
-                    <Route path="/progress" element={<Progress />} />
-                    <Route path="/signup" element={<Login />} />
+                    <Route path="/levelSelect" element={<Progress/>} /> 
+                     <Route path="/signup" element={<Login />} />
+                     <Route path="/gameplay" element={<Gameplay />} />
                 </Routes>
             </>
         )
