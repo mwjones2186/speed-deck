@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../css/navigation.css';
 
 
-export const Navigation = () => {
+export default function Navigation  ()  {
     return (
         <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
             <Navbar.Toggle aria-controls='navbarScroll' data-bs-target='#navbarScroll' />
@@ -16,7 +16,7 @@ export const Navigation = () => {
                         <NavLink className='navItem' href='/'>Home</NavLink>
                         <NavLink className='navItem' href='/profile'>Profile</NavLink>
                         <NavLink className='navItem' href='/leaderboard'>Leaderboard</NavLink>
-                        <NavLink className='navItem' href='/progress'>Progress</NavLink>
+                        <NavLink className='navItem' href='/levelSelect'>Level Select</NavLink>
                         <NavLink className='navItem login' href='/signup'>Login/SignUp</NavLink>
                     </Nav>
                 </div>

@@ -1,7 +1,7 @@
 import bgVid from '../images/bigbrain.mp4';
 import '../css/homepage.css';
 
-export const Home = () => {
+export default function Home () {
     return (
         <div className="Hero">
              <div className='main'>

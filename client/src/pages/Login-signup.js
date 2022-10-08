@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import '../css/login-signup.css';
 
-export const Login = () => {
+export default function Login (){
     return (
         <Container className="pageWrap">
             <Row>
@@ -16,6 +16,12 @@ export const Login = () => {
                 <Col lg={6} className="signup">
                     <h1>New Here?</h1>
                     <p>Sign up and have fun playing all of our math related games!</p>
+                    <form>
+                        <input type='text' placeholder="Username" id="username" />
+                        <input type='text' placeholder="Email" id="email" />
+                        <input type='text' placeholder="Password" id="password" />
+                        <input type='text' placeholder="Re-EnterPassword" id="password" />
+                    </form>
                     <button>Sign up</button>
                 </Col>
                
