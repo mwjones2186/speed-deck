@@ -2,7 +2,8 @@
 import Alert from 'react-bootstrap/Alert';
 import Button from'react-bootstrap/Button';
 export default function Progress  ()  {
-const points= 15;
+const points= 15
+;
 
   return (
     <>
