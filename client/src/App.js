@@ -5,7 +5,7 @@ import Leaderboard from "./pages/Leaderboard";
 import Profile from "./pages/Profile";
 import Progress from "./pages/Progress";
 import Login from "./pages/Login-signup";
-
+import LevelOne from "./components/LevelOne";
 import "./css/app.css";
 import Gameplay from "./pages/GameScreen";
 
@@ -21,6 +21,7 @@ function App() {
         <Route path="/levelSelect" element={<Progress />} />
         <Route path="/signup" element={<Login />} />
         <Route path="/gameplay" element={<Gameplay />} />
+        <Route path="/levelOne" element={<LevelOne />} />
       </Routes>
     </>
   );
