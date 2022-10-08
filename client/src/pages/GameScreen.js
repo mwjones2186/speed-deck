@@ -5,7 +5,7 @@ export default function Gameplay(){
         <>
         <h1>this is the gameplay page</h1>
 
-        <Button href="singleplayer/one"> Solo</Button>
+        <Button href="/levelOne"> Solo</Button>
         <Button> 1v1</Button>
         <Button> Battle Royale!</Button>
         </>
