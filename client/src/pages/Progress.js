@@ -2,7 +2,7 @@
 import Alert from 'react-bootstrap/Alert';
 import Button from'react-bootstrap/Button';
 export default function Progress  ()  {
-const points= 15
+const points= 25
 ;
 
   return (
@@ -13,7 +13,7 @@ const points= 15
        Level 1 consists of single digit number +/- a single digit number. 5 cards that will be totally random. Lets see how fast you can math! 
       </p>
       <hr />
-      <Button href="/gameplay">Lets play!</Button>
+      <Button href="/gameplay">Play Level 1</Button>
     </Alert>
     <Alert variant="warning">
       <Alert.Heading>Level 2</Alert.Heading>
@@ -21,7 +21,7 @@ const points= 15
        Level 2 consists of double digit number +/- a single digit number. 5 cards that will be totally random. Lets see how fast you can math! 
       </p>
       <hr />
-      {points >= 11 ? (<Button>Level 2</Button>) : (<button disabled >Beat level 1 to Unlock</button>)}
+      {points <= 20 ? (<Button>Play Level 2</Button>) : (<button disabled >Beat level 1 to Unlock</button>)}
     </Alert>
     <Alert variant="danger">
       <Alert.Heading>Level 3</Alert.Heading>
@@ -29,7 +29,7 @@ const points= 15
        Level 3 consists of double digit number +/- a double digit number. 5 cards that will be totally random. Lets see how fast you can math! 
       </p>
       <hr />
-      {points >= 11 ? (<button>Level 3</button>) : (<button disabled >Beat level 2 to Unlock</button>)}
+      {points <= 20 ? (<button>Play Level 3</button>) : (<button disabled >Beat level 2 to Unlock</button>)}
     </Alert>
     <Alert variant="danger">
       <Alert.Heading>Level 4</Alert.Heading>
@@ -37,7 +37,7 @@ const points= 15
        Level 4 consists of single digit number MULTIPLIED by a single digit number. 5 cards that will be totally random. Lets see how fast you can math! 
       </p>
       <hr />
-      {points >= 11 ? (<button>Level 4</button>) : (<button disabled >Beat level 3 to Unlock</button>)}
+      {points <= 20 ? (<button>Play Level 4</button>) : (<button disabled >Beat level 3 to Unlock</button>)}
     </Alert>
     <Alert variant="danger">
       <Alert.Heading>Level 5</Alert.Heading>
@@ -45,7 +45,7 @@ const points= 15
        Level 5 consists of double digit number MULTIPLIED by a single digit number. 5 cards that will be totally random. Lets see how fast you can math! 
       </p>
       <hr />
-      {points >= 11 ? (<button>Level 5</button>) : (<button disabled >Beat level 4 to Unlock</button>)}
+      {points <= 20 ? (<button>Play Level 5</button>) : (<button disabled >Beat level 4 to Unlock</button>)}
     </Alert>
     </>
   );
