@@ -16,7 +16,7 @@ function UserLoggedIn(props) {
                         <NavLink className='navItem' href='/profile'>Profile</NavLink>
                         <NavLink className='navItem' href='/leaderboard'>Leaderboard</NavLink>
                         <NavLink className='navItem' href='/progress'>Progress</NavLink>
-                        <NavLink className='navItem login' href='/signup'>Login/SignUp</NavLink>
+                        <NavLink className='navItem login' href='/signup'>Logout</NavLink>
                     </Nav>
                 </div>
             </Navbar.Collapse>
