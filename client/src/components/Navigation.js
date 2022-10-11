@@ -5,12 +5,12 @@ import '../css/navigation.css';
 
 function UserLoggedIn(props) {
     return (
-        <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+        <Navbar collapseOnSelect expand='lg' bg='black' variant='dark'>
             <Navbar.Toggle aria-controls='navbarScroll' data-bs-target='#navbarScroll' />
             <Navbar.Collapse id='navbarScroll'>
-                <Link to='/' className='h1Wrap'>
+                <NavLink href='/' className='h1Wrap'>
                     <h1 className='navh1'>SpeedDeck</h1>
-                </Link>
+                </NavLink>
                 <div className='wrap'>
                     <Nav className='navWrap'>
                         <NavLink className='navItem' href='/'>Home</NavLink>

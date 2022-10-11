@@ -1,5 +1,6 @@
 .navWrap {
     text-align: center;
+    z-index: 9999;
 }
 
 .wrap {
@@ -12,6 +13,7 @@
 .navItem {
     padding: 10px 35px 10px 35px !important;
     border-radius: 10px;
+    font-size: 18px;
 }
 
 /* .login {
@@ -27,19 +29,22 @@
 }
 
 .h1Wrap {
-    color: white;
-    padding: 5px 5px 5px 30px;
+    color: gray;
+    padding: 10px 5px 0px 30px;
     text-decoration: none;
+    z-index: 9999;
 }
 
 .h1Wrap h1 {
-    font-size: 45px;
+    font-size: 60px;
 }
 
 .h1Wrap h1:hover {
-    font-size: 47px;
+    transition: all .25s ease-out;
     color: white;
+    font-size: 65px;
 }
+
 
 @media (max-width: 992px) {
 
