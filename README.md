@@ -51,9 +51,9 @@ https://user-images.githubusercontent.com/101370470/177413990-bec3b14b-6b43-4d53
   <!-- add your email here -->
   Koda Passey: <br/>
   kodapassey@charter.net <br/>
-
+  <br/>
   Mike Jones: <br/> 
   https://www.github.com/mwjones2186 <br/>
   https://www.linkedin.com/in/michael-jones-0617b681 <br/>
-  [Email Me](mwjones2186@gmail.com) <br/>
+  mwjones2186@gmail.com <br/>
   
