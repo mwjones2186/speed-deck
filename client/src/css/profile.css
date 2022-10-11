@@ -1,0 +1,13 @@
+.textBorder {
+    text-align: right;
+}
+
+.table {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.table h3 {
+    text-align: left;
+    margin-bottom: 0px;
+}
