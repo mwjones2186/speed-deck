@@ -1,10 +1,4 @@
-<<<<<<< HEAD:client/src/Pages/Leaderboard.js
-import '../css/Leaderboard.css';
-
-export const Leaderboard = () => {
-=======
 export default function Leaderboard  ()  {
->>>>>>> 3a178a26ddb22024123b6eac7be1d42c344e7a1e:client/src/pages/Leaderboard.js
     return (
             <><h1></h1><div className="Leaderboard">
                 <header>

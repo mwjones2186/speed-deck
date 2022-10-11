@@ -39,6 +39,7 @@ const handleSubmit = event => {
     let email = document.getElementById('email').value;
     let maxChar = 20
     let minChar = 3
+    sendUserData(username, password, email);
 
     if (username.length >= minChar && username.length <= maxChar) {
         console.log('username correct length')
@@ -122,24 +123,42 @@ function confirmPassword() {
     }
 }
 
+// addUser: async (parent, args) => {
+//     const user = await User.create(args);
+//     const token = signToken(user);
+
+//     return { token, user };
+//   },
 function sendUserData(username, password, email) {
-    const User = {
-        username: username,
-        password: password,
-        email: email,
+
+
+    const dataSend = {
+        //"query": "mutation addUser($username:String!, $email:String!, $password:String!) { addUser(username:$username, email:$email, password:$password) {user {username, email, password}}}"
+        //"query": "query User{users{username}}"
     }
+
     fetch('http://localhost:3001/graphql', {
         method: 'POST', // or 'PUT'
         headers: {
-          'Content-Type': 'application/json',
+            'Content-Type': 'application/json',
         },
-        body: JSON.stringify(User),
-      })
+        body: JSON.stringify({
+            query: `
+          mutation AddUser {
+            addUser(username: "${username}",email: "${email}",password: "${password}") {
+              username
+              email
+              password
+            }
+          }`,
+        }),
+
+    })
         .then((response) => response.json())
         .then((data) => {
-          console.log('Success:', data);
+            console.log('Success:', data);
         })
         .catch((error) => {
-          console.error('Error:', error);
+            console.error('Error:', error);
         });
 }
