@@ -33,8 +33,7 @@ https://user-images.githubusercontent.com/101370470/177413990-bec3b14b-6b43-4d53
 
   <!-- add your github username + link here -->
   [kodapassey](https://github.com/kodapassey)<br />
-  [mwjones2186](https://github.com/mwjones2186)<br />
-  
+  [kodapassey](https://github.com/kodapassey)<br />
   [kodapassey](https://github.com/kodapassey)<br />
 
   ## Questions
@@ -47,13 +46,6 @@ https://user-images.githubusercontent.com/101370470/177413990-bec3b14b-6b43-4d53
   
   <br />
   <br />
-  How to contact us: <br />
+  Email us with any questions: <br />
   <!-- add your email here -->
-  Koda Passey: <br/>
-  kodapassey@charter.net <br/>
-  <br/>
-  Mike Jones: <br/> 
-  https://www.github.com/mwjones2186 <br/>
-  https://www.linkedin.com/in/michael-jones-0617b681 <br/>
-  mwjones2186@gmail.com <br/>
-  
+  kodapassey@charter.net
