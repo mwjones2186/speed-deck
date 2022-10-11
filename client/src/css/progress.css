@@ -15,10 +15,6 @@
     background:green;
 }
 
-.notunlocked {
-    background-color: red;
-}
-
 .unlocked:hover {
     background: green;
     border: 2px solid white;

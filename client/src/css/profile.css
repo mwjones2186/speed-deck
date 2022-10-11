@@ -31,12 +31,13 @@ tr {
 }
 
 .levelBtn {
-    width: 25px;
     position: relative;
-    left: 48.5%;
+    left: 47%;
 }
 
 .levelBtn button {
+    margin-top: 10px;
+    width: 100px;
     background: #555;
     border: 2px solid white;
 }
