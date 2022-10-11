@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/speed-deck/static/css/main.82172c3d.css",
+    "main.js": "/speed-deck/static/js/main.b3e7b4c3.js",
+    "static/media/bigbrain.mp4": "/speed-deck/static/media/bigbrain.a122ab32527a767a5e41.mp4",
+    "index.html": "/speed-deck/index.html",
+    "main.82172c3d.css.map": "/speed-deck/static/css/main.82172c3d.css.map",
+    "main.b3e7b4c3.js.map": "/speed-deck/static/js/main.b3e7b4c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82172c3d.css",
+    "static/js/main.b3e7b4c3.js"
+  ]
+}
