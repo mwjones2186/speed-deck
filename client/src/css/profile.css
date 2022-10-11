@@ -1,13 +1,47 @@
 .textBorder {
-    text-align: right;
+    text-align: center;
 }
 
-.table {
+.textBorder h1,
+.textBorder h2 {
+    color: white;
+    margin: 10px 0 25px 0;
+}
+
+.profileTable {
+    width: 60%;
     text-align: left;
     margin-top: 50px;
+    margin: 0 auto;
+    color: white;
+}
+
+.profileTable h3 {
+    text-align: center;
+}
+
+tr {
+    color: white;
+    letter-spacing: 2px;
 }
 
 .table h3 {
     text-align: left;
     margin-bottom: 0px;
+}
+
+.levelBtn {
+    width: 25px;
+    position: relative;
+    left: 48.5%;
+}
+
+.levelBtn button {
+    background: #555;
+    border: 2px solid white;
+}
+
+.levelBtn button:hover {
+    background: rgb(32, 32, 32);
+    border: 2px solid white;
 }

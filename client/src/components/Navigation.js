@@ -5,7 +5,7 @@ import '../css/navigation.css';
 
 export default function Navigation  ()  {
     return (
-        <Navbar collapseOnSelect expand='lg' bg='black' variant='dark'>
+        <Navbar className='navFull' collapseOnSelect expand='lg' bg='black' variant='dark'>
             <Navbar.Toggle aria-controls='navbarScroll' data-bs-target='#navbarScroll' />
             <Navbar.Collapse id='navbarScroll'>
                 <NavLink href='/' className='h1Wrap'>

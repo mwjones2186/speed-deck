@@ -1,3 +1,7 @@
+.navFull {
+    border-bottom: 2px solid white;
+}
+
 .navWrap {
     text-align: center;
     z-index: 9999;
