@@ -11,7 +11,7 @@ export default function Home() {
             </div>
 
             <div className="hero">
-                <h1 className="hero-header"><span className='dont'>Don't</span> Be A Statistic (Unless You're <span className='numberOne'>#1</span>) </h1>
+                <h1 className="hero-header"><span className='dont'>Don't</span> Be A Statistic ( Unless You're <span className='numberOne'>#1</span>) </h1>
 
 
                 <div class="container">
