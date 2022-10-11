@@ -1,13 +1,16 @@
 import { Button } from "react-bootstrap"
+import '../css/GameScreen.css'
 
-export default function Gameplay(){
-    return(
-        <>
-        <h1>this is the gameplay page</h1>
+export default function Gameplay() {
+    return (
+        <div className="gameplayWrap">
+            <h1>select a gamemode</h1>
 
-        <Button href="/levelOne"> Solo</Button>
-        <Button> 1v1</Button>
-        <Button> Battle Royale!</Button>
-        </>
+            <div className="buttons">
+                <Button className="solo threeBtn" href="/levelOne"><span className='soloSpan'>Solo</span></Button>
+                <Button className="oneVone threeBtn">One Vs. One</Button>
+                <Button className="battleRoyal threeBtn"> Battle Royale!</Button>
+            </div>
+        </div>
     )
 }
