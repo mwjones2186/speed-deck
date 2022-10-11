@@ -14,16 +14,20 @@ export default function Timer({timerId, stopTimer}) {
 //   }
 
   useEffect(()=>{
-     timerId = setInterval(function(){
-       setTime(seconds++)
-
-    }, 10)
-
-    if(seconds === 1500){
-
-      return (()=>  clearInterval(timerId))
+    let interval = null;
+  
+    if (stopTimer === false) {
+      interval = setInterval(() => {
+        setTime((time) => time + 10);
+      }, 10);
+    } else {
+      clearInterval(interval);
     }
-  },[])
+    return () => {
+      clearInterval(interval);
+    };
+   
+  },[stopTimer])
 
   return (
     <div>
