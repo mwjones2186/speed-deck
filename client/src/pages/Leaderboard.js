@@ -4,7 +4,7 @@ export default function Leaderboard () {
     return (
             <><h1></h1><div className="Leaderboard">
                 <header>
-                    <h1>Leaderboard</h1>
+                    <h1 className='leaderboardH1'>Leaderboard</h1>
                 <nav>
                     <a href="">Solo</a>
                     <a href="">Versus</a>

@@ -10,3 +10,32 @@ body {
   font-family: 'Staatliches', cursive;
   background: black;
 }
+
+.readyDiv {
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.readyDiv h1 {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  width: 100%;
+}
+
+.readyDiv button {
+  width: 200px;
+  height: 75px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  margin-top: 50px;
+  position: relative;
+  font-size: 30px;
+}
+
+.readyDiv button:hover {
+  transition: all .25s ease-out;
+  background: lime;
+  border: 3px solid white;
+}
