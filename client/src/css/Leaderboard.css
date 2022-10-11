@@ -75,7 +75,7 @@ nav a+a {
     margin-left: 1rem;
 }
 
-h1 {
+.leaderboardH1 {
     font-size: 3rem;
     line-height: 3rem;
     text-align: center;
@@ -85,7 +85,3 @@ a:hover {
     border-bottom: 4px solid lightgreen;
     color: black;
 }
-
-header h1 {
-    font-family: 
-};

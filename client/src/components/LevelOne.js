@@ -9,18 +9,18 @@ export default function LevelOne() {
   const [stopTimer, setStopTimer] = useState(false)
   let timerId;
   return (
-    <>
+    <div className="levelDiv">
       {questionStart ? (
         <>
         <Question level={1} timerId={timerId} setStopTimer={setStopTimer} stopTimer={stopTimer} setQuestionStart={setQuestionStart}/>
        <Timer timerId={timerId} stopTimer={stopTimer}/>
        </>
       ) : (
-        <div>
+        <div className="readyDiv">
           <h1>Are you ready?</h1>
           <button onClick={() => setQuestionStart(true)}>Go!</button>
         </div>
       )}
-    </>
+    </div>
   );
 }
