@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
-export default function Question({ level, timerId, setStopTimer }) {
+export default function Question({ level, timerId, setStopTimer, setQuestionStart }) {
   const [numbers, setNumbers] = useState({ num1: 0, num2: 0 });
   const [correctAnwer, setCorrectAnswer] = useState();
   const [questionState, setQuestionState] = useState("");
-
-  const [questionCount, setQuestionCount] = useState(1);
+  const [errorMessage, setErrorMessage] = useState("Correct");
+  const [count, setCount] = useState(0);
+  const [questionCount, setQuestionCount] = useState(count);
   const [opxState, setOpx] = useState("");
   const [inputState, setInputState] = useState("");
-
+  const [gameOver, setGameOver] = useState(false)
 
   useEffect(() => {
     generateQuestion();
-  }, [])
+  }, []);
 
- 
-
-  const generateQuestion =  () => {
+  const generateQuestion = () => {
     let num1;
     let num2;
     let opx;
@@ -30,42 +29,53 @@ export default function Question({ level, timerId, setStopTimer }) {
     setOpx(opx);
 
     setInputState("");
-       
   };
-
+  console.log(questionCount);
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       handleSubmit();
     }
   };
+  useEffect(() => {
+    setQuestionCount(count);
+  }, [count]);
 
   const handleSubmit = () => {
     // setUserAnswer(parseInt(inputState));
-    const correctAnswer = opxState === "+"
-    ? numbers.num1 + numbers.num2
-    : opxState === "-"
-    ? numbers.num1 - numbers.num2
-    : numbers.num1 * numbers.num2
+    const correctAnswer =
+      opxState === "+"
+        ? numbers.num1 + numbers.num2
+        : opxState === "-"
+        ? numbers.num1 - numbers.num2
+        : numbers.num1 * numbers.num2;
 
-    console.log(correctAnswer);
+    console.log(questionCount);
     if (parseInt(inputState) === correctAnswer) {
-
+      setCount((c) => c + 1);
       if (questionCount <= 2) {
-        console.log("Right", questionCount);
-        setQuestionCount(questionCount + 1);
+        console.log(questionCount);
         generateQuestion();
       } else {
         setStopTimer(true);
-        
+        setGameOver(true)
+        // if (timerId <= 2000) {
+        // }
       }
     } else {
-      console.log("WRONG");
+      console.log("wrong");
+      //   setErrorMessage("Correct")
     }
   };
 
+
+
   return (
     <div>
-      <h1>How much is {numbers.num1} {opxState} {numbers.num2}?</h1>
+        {!gameOver ? (
+        <>
+        <h1>
+        How much is {numbers.num1} {opxState} {numbers.num2}?
+      </h1>
       <input
         tabIndex={0}
         onKeyUp={handleKeyDown}
@@ -73,6 +83,8 @@ export default function Question({ level, timerId, setStopTimer }) {
         value={inputState}
       />
       <button onClick={() => handleSubmit()}>Submit</button>
-    </div>
+      </>
+    ) :(<h1>game over</h1>)}
+      </div>
   );
 }
