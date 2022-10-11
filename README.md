@@ -49,11 +49,11 @@ https://user-images.githubusercontent.com/101370470/177413990-bec3b14b-6b43-4d53
   <br />
   How to contact us: <br />
   <!-- add your email here -->
-  Koda Passey:
-  kodapassey@charter.net
-  
-  Mike Jones: 
-  https://www.github.com/mwjones2186
-  https://www.linkedin.com/in/michael-jones-0617b681
-  [email:](mwjones2186@gmail.com)
+  Koda Passey: <br/>
+  kodapassey@charter.net <br/>
+
+  Mike Jones: <br/> 
+  https://www.github.com/mwjones2186 <br/>
+  https://www.linkedin.com/in/michael-jones-0617b681 <br/>
+  [email:](mwjones2186@gmail.com) <br/>
   
