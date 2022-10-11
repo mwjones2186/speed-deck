@@ -13,7 +13,7 @@ export default function Profile() {
                 </div>
 
                 <div className='profileTable'>
-                    <h3>progress:</h3>
+                    <h3>current progress:</h3>
                     <Table>
 
                         <thead>
@@ -55,7 +55,7 @@ export default function Profile() {
 
 
                 <Link className='levelBtn' to='/levelSelect'>
-                    <Button >
+                    <Button>
                         Play
                     </Button>
                 </Link>
