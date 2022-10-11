@@ -12,7 +12,7 @@ export default function LevelOne() {
     <>
       {questionStart ? (
         <>
-        <Question level={1} timerId={timerId} setStopTimer={setStopTimer}/>
+        <Question level={1} timerId={timerId} setStopTimer={setStopTimer} stopTimer={stopTimer} setQuestionStart={setQuestionStart}/>
        <Timer timerId={timerId} stopTimer={stopTimer}/>
        </>
       ) : (
