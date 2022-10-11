@@ -31,18 +31,20 @@
 
 .hero h2 {
   font-family: 'Caveat', cursive;
+  position: relative;
+  bottom: 49%;
 }
 
 
 .line1 {
-    display: block;
-    margin: 5px 0 5px 0
+  display: block;
+  margin: 5px 0 5px 0
 }
 
 .line2 {
-    display: block;
-    margin: 5px 0 50px 0;
-    white-space: nowrap;
+  display: block;
+  margin: 5px 0 50px 0;
+  white-space: nowrap;
 }
 
 .main {
