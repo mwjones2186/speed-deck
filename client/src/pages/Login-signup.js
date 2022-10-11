@@ -35,6 +35,8 @@ const handleSubmit = event => {
     console.log('form submitted')
     let form = document.getElementsByName("signUp")[0];
     let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+    let email = document.getElementById('email').value;
     let maxChar = 20
     let minChar = 3
 
@@ -80,6 +82,10 @@ const handleSubmit = event => {
             successMsg.innerHTML += "Password must be 6-20 characters long";
         }
         form.before(successMsg);
+        if (successMsg.innerHTML.length <= 0) {
+            sendUserData(username, password, email);
+        }
+
     }
     else {
         successMsg.innerHTML = "";
@@ -94,7 +100,9 @@ const handleSubmit = event => {
             if (successMsg.innerHTML.length > 0) successMsg.innerHTML += ", ";
             successMsg.innerHTML += "Password must be 6-20 characters long";
         }
-
+        if (successMsg.innerHTML.length <= 0) {
+            sendUserData(username, password, email);
+        }
     }
 
 }
@@ -112,4 +120,26 @@ function confirmPassword() {
         console.log('error');
         signUpPasswordValid = false;
     }
+}
+
+function sendUserData(username, password, email) {
+    const User = {
+        username: username,
+        password: password,
+        email: email,
+    }
+    fetch('http://localhost:3001/graphql', {
+        method: 'POST', // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(User),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
 }
