@@ -3,10 +3,8 @@ import '../css/navigation.css';
 import logo from '../images/Screenshot (15).png';
 
 
-function UserLoggedIn(props) 
-
-export default function Navigation() {
-
+// function UserLoggedIn(props) 
+export default function Navigation(props) {
     return (
         <Navbar className='navFull' collapseOnSelect expand='lg' bg='black' variant='dark'>
             <Navbar.Toggle aria-controls='navbarScroll' data-bs-target='#navbarScroll' />
@@ -22,7 +20,7 @@ export default function Navigation() {
                         <NavLink className='navItem' href='/'>Home</NavLink>
                         <NavLink className='navItem' href='/profile'>Profile</NavLink>
                         <NavLink className='navItem' href='/leaderboard'>Leaderboard</NavLink>
-                        <NavLink className='navItem' href='/progress'>Progress</NavLink>
+                        {/* <NavLink className='navItem' href='/progress'>Progress</NavLink> */}
                         <NavLink className='navItem login' href='/signup'>Logout</NavLink>
                     </Nav>
                 </div>
@@ -36,9 +34,9 @@ function UserLoggedOut(props) {
         <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
             <Navbar.Toggle aria-controls='navbarScroll' data-bs-target='#navbarScroll' />
             <Navbar.Collapse id='navbarScroll'>
-                <Link to='/' className='h1Wrap'>
+                <NavLink to='/' className='h1Wrap'>
                     <h1 className='navh1'>SpeedDeck</h1>
-                </Link>
+                </NavLink>
                 <div className='wrap'>
                     <Nav className='navWrap'>
                         <NavLink className='navItem' href='/'>Home</NavLink>
@@ -52,11 +50,11 @@ function UserLoggedOut(props) {
 
 
 
-export default function Navigation(props) {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-        return <UserLoggedIn />;
-    }
-    return <UserLoggedOut />;
-}
+// export default function Navigation(props) {
+//     const isLoggedIn = props.isLoggedIn;
+//     if (isLoggedIn) {
+//         return <UserLoggedOut />;
+//     }
+//     return <UserLoggedOut />;
+// }
 

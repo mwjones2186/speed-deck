@@ -100,10 +100,9 @@
     background-color: rgba(255,255,255,0);
   }
 
-  ///////////
 
   .signUpBtn {
-    color: #FFF;
+    color: rgb(0, 0, 0);
     transition: all 0.5s;
     position: relative; 
   }

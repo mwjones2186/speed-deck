@@ -130,7 +130,7 @@ export default function Login(props) {
               onChange={handleChange}
               placeholder="Password"
             />
-          <button type="submit">Sign up</button>
+          <button className="signInBtn" type="submit" >Sign up</button>
           </form>
         </Col>
       </Row>
