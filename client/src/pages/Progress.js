@@ -11,7 +11,7 @@ const points= 25000;
  const handleClick = () => {
   setLevelState(levelState +1)
  }
- 
+
 
   return (
     <>
@@ -24,7 +24,7 @@ const points= 25000;
       <Button className='unlocked' href="/gameplay">Play Level 1</Button>
     </Alert>
     <Alert variant="warning" className='box'>
-      <Alert.Heading>Level 2 {2}</Alert.Heading>
+      <Alert.Heading>Level 2</Alert.Heading>
       <p>
        Level 2 consists of double digit number +/- a single digit number. 5 cards that will be totally random. Lets see how fast you can math! 
       </p>

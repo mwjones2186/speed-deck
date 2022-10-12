@@ -13,7 +13,7 @@ export default function Timer({ timerId, stopTimer }) {
 
   async function saveTime() {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
-const screObj = {}
+    const scoreObj = {}
     if (!token) {
       return false;
     }
