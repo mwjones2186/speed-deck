@@ -1,5 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import '../css/profile.css';
+import Button from 'react-bootstrap/Button'
+import { Link } from "react-router-dom";
 
 export default function Profile() {
     return (
@@ -10,8 +12,8 @@ export default function Profile() {
                     <h2>email</h2>
                 </div>
 
-                <div className='table'>
-                    <h3>progress:</h3>
+                <div className='profileTable'>
+                    <h3>current progress:</h3>
                     <Table>
 
                         <thead>
@@ -50,6 +52,13 @@ export default function Profile() {
                         </tbody>
                     </Table>
                 </div>
+
+
+                <Link className='levelBtn' to='/levelSelect'>
+                    <Button>
+                        Play
+                    </Button>
+                </Link>
             </section>
         </>
     )

@@ -5,13 +5,40 @@ import Leaderboard from "./pages/Leaderboard";
 import Profile from "./pages/Profile";
 import Progress from "./pages/Progress";
 import Login from "./pages/Login-signup";
-import LevelOne from "./components/LevelOne";
+import Level from "./components/Level";
 import "./css/app.css";
 import Gameplay from "./pages/GameScreen";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
+
+const httpLink = createHttpLink({
+  uri: "/graphql",
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem("id_token");
+
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : "",
+    },
+  };
+});
+
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
-    <>
+    <ApolloProvider client={client}>
       <Navigation />
 
       <Routes>
@@ -21,9 +48,9 @@ function App() {
         <Route path="/levelSelect" element={<Progress />} />
         <Route path="/signup" element={<Login />} />
         <Route path="/gameplay" element={<Gameplay />} />
-        <Route path="/levelOne" element={<LevelOne />} />
+        <Route path="/levelOne" element={<Level />} />
       </Routes>
-    </>
+    </ApolloProvider>
   );
 }
 
