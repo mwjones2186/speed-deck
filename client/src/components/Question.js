@@ -10,7 +10,7 @@ export default function Question({ level, timerId, setStopTimer, setQuestionStar
   const [opxState, setOpx] = useState("");
   const [inputState, setInputState] = useState("");
   const [gameOver, setGameOver] = useState(false)
-  const [levelState, setLevelState] = useState("")
+  // const [levelState, setLevelState] = useState("")
 
   useEffect(() => {
     generateQuestion();
@@ -21,37 +21,37 @@ export default function Question({ level, timerId, setStopTimer, setQuestionStar
     let num2;
     let opx;
   // setLevelState(1)
-    if (levelState === 1) {
+    if (level === 1) {
       num1 = Math.floor(Math.random() * 10);
       num2 = Math.floor(Math.random() * 10);
       opx = ["+", "-"][Math.floor(Math.random() * 2)];
       console.log({ num1, num2 });
     }
-    if (levelState === 2) {
-      num1 = Math.floor(Math.random() * 100);
-      num2 = Math.floor(Math.random() * 10);
-      opx = ["+", "-"][Math.floor(Math.random() * 2)];
-    }
-    if (levelState === 3) {
-      num1 = Math.floor(Math.random() * 100);
-      num2 = Math.floor(Math.random() * 100);
-      opx = ["+", "-"][Math.floor(Math.random() * 2)];
-    }
-    if (levelState === 4) {
-      num1 = Math.floor(Math.random() * 10);
-      num2 = Math.floor(Math.random() * 10);
-      opx = ["+", "-", "*"][Math.floor(Math.random() * 3)];
-    }
-    if (levelState === 5) {
-      num1 = Math.floor(Math.random() * 100);
-      num2 = Math.floor(Math.random() * 10);
-      opx = ["+", "-", "*"][Math.floor(Math.random() * 3)];
-    }
-    if (levelState === 6) {
-      num1 = Math.floor(Math.random() * 100);
-      num2 = Math.floor(Math.random() * 100);
-      opx = ["+", "-", "*"][Math.floor(Math.random() * 3)];
-    }
+    // if (levelState === 2) {
+    //   num1 = Math.floor(Math.random() * 100);
+    //   num2 = Math.floor(Math.random() * 10);
+    //   opx = ["+", "-"][Math.floor(Math.random() * 2)];
+    // }
+    // if (levelState === 3) {
+    //   num1 = Math.floor(Math.random() * 100);
+    //   num2 = Math.floor(Math.random() * 100);
+    //   opx = ["+", "-"][Math.floor(Math.random() * 2)];
+    // }
+    // if (levelState === 4) {
+    //   num1 = Math.floor(Math.random() * 10);
+    //   num2 = Math.floor(Math.random() * 10);
+    //   opx = ["+", "-", "*"][Math.floor(Math.random() * 3)];
+    // }
+    // if (levelState === 5) {
+    //   num1 = Math.floor(Math.random() * 100);
+    //   num2 = Math.floor(Math.random() * 10);
+    //   opx = ["+", "-", "*"][Math.floor(Math.random() * 3)];
+    // }
+    // if (levelState === 6) {
+    //   num1 = Math.floor(Math.random() * 100);
+    //   num2 = Math.floor(Math.random() * 100);
+    //   opx = ["+", "-", "*"][Math.floor(Math.random() * 3)];
+    // }
     setNumbers({ num1, num2 });
     setOpx(opx);
 
