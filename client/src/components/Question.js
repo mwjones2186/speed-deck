@@ -1,3 +1,4 @@
+import '../css/question.css'
 import { useEffect, useState } from "react";
 export default function Question({ level, timerId, setStopTimer, setQuestionStart }) {
   const [numbers, setNumbers] = useState({ num1: 0, num2: 0 });
@@ -70,11 +71,11 @@ export default function Question({ level, timerId, setStopTimer, setQuestionStar
 
 
   return (
-    <div>
+    <div className="game-container">
         {!gameOver ? (
         <>
         <h1>
-        How much is {numbers.num1} {opxState} {numbers.num2}?
+        What is {numbers.num1} {opxState} {numbers.num2}?
       </h1>
       <input
         tabIndex={0}
