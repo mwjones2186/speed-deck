@@ -14,7 +14,7 @@ export default function Timer({ timerId, stopTimer }) {
   async function saveTime() {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 <<<<<<< HEAD
-    const scoreObj = {}
+const scoreObj = {}
 =======
 const scoreObj = {}
 >>>>>>> 0257b567abf07930f8bc40f7358fe5d2cbf7cb01
