@@ -22,6 +22,11 @@ export default function Login() {
                         <input type='text' placeholder="Email" id="email" name='email' />
                         <input type='password' placeholder="Password" id="password" />
                         <input type='password' placeholder="Re-EnterPassword" id="rePassword" />
+                        <div class="box-2 signUpBtn" type="submit">
+                            <div class="btn btn-two">
+                                <span>Sign Up</span>
+                            </div>
+                        </div>
                         <button className="signUpBtn" type="submit">Sign up</button>
                     </form>
                 </Col>
@@ -64,7 +69,6 @@ const handleSubmit = event => {
     confirmPassword();
 
     let successMsg = document.getElementById("successMsg");
-    let newMsg = "";
 
     if (successMsg == null || successMsg == undefined) {
         successMsg = document.createElement("span");
@@ -119,45 +123,4 @@ function confirmPassword() {
         console.log('error');
         signUpPasswordValid = false;
     }
-}
-
-// addUser: async (parent, args) => {
-//     const user = await User.create(args);
-//     const token = signToken(user);
-
-//     return { token, user };
-//   },
-
-function sendUserData(username, password, email) {
-
-
-    const dataSend = {
-        //"query": "mutation addUser($username:String!, $email:String!, $password:String!) { addUser(username:$username, email:$email, password:$password) {user {username, email, password}}}"
-        //"query": "query User{users{username}}"
-    }
-
-    fetch('http://localhost:3001/graphql', {
-        method: 'POST', // or 'PUT'
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            query: `
-          mutation AddUser {
-            addUser(username: "${username}",email: "${email}",password: "${password}") {
-              username
-              email
-              password
-            }
-          }`,
-        }),
-
-    })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log('Success:', data);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
 }
