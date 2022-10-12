@@ -1,6 +1,8 @@
+
 import '../css/Leaderboard.css';
 
 export default function Leaderboard () {
+
     return (
             <><h1></h1><div className="Leaderboard">
                 <header>
