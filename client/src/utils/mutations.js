@@ -6,6 +6,8 @@ export const LOGIN = gql`
       token
       user {
         _id
+        email
+        username
       }
     }
   }
@@ -16,6 +18,22 @@ export const ADD_USER = gql`
       token
       user {
         _id
+        email
+        username
+      }
+    }
+  }
+`;
+export const SAVE_SCORE = gql`
+  mutation saveScore($levelScore: ScoreInput!) {
+    saveScore(levelScore: $levelScore) {
+      _id
+      username
+      email
+      savedScore {
+        _id
+        levelName
+        score
       }
     }
   }
