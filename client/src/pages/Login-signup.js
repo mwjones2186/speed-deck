@@ -61,8 +61,6 @@ const handleSubmit = event => {
         //        return (false)
     }
 
-    // password is invalid, email is invalid
-    // email is not valid
     confirmPassword();
 
     let successMsg = document.getElementById("successMsg");
@@ -72,15 +70,15 @@ const handleSubmit = event => {
         successMsg = document.createElement("span");
         successMsg.id = "successMsg";
         if (!signUpUsernameValid) {
-            successMsg.innerHTML += "Username is invalid";
+            successMsg.innerHTML += "<span style= color:white;>Username is invalid,</span>";
         }
         if (!signUpEmailValid) {
             if (successMsg.innerHTML.length > 0) successMsg.innerHTML += ", ";
-            successMsg.innerHTML += "Email is invalid";
+            successMsg.innerHTML += "<span style= color:white;>Email is invalid,</span>";
         }
         if (!signUpPasswordValid) {
             if (successMsg.innerHTML.length > 0) successMsg.innerHTML += ", ";
-            successMsg.innerHTML += "Password must be 6-20 characters long";
+            successMsg.innerHTML += "<span style= color:white;>Password must be 6-20 characters long</span>";
         }
         form.before(successMsg);
         if (successMsg.innerHTML.length <= 0) {
@@ -91,15 +89,15 @@ const handleSubmit = event => {
     else {
         successMsg.innerHTML = "";
         if (!signUpUsernameValid) {
-            successMsg.innerHTML += "Username is invalid";
+            successMsg.innerHTML += "<span style= color:white;>Username is invalid,</span>";
         }
         if (!signUpEmailValid) {
             if (successMsg.innerHTML.length > 0) successMsg.innerHTML += ", ";
-            successMsg.innerHTML += "Email is invalid";
+            successMsg.innerHTML += "<span style= color:white;>Email is invalid,</span>";
         }
         if (!signUpPasswordValid) {
             if (successMsg.innerHTML.length > 0) successMsg.innerHTML += ", ";
-            successMsg.innerHTML += "Password must be 6-20 characters long";
+            successMsg.innerHTML += "<span style= color:white;>Password must be 6-20 characters long</span>";
         }
         if (successMsg.innerHTML.length <= 0) {
             sendUserData(username, password, email);
@@ -129,6 +127,7 @@ function confirmPassword() {
 
 //     return { token, user };
 //   },
+
 function sendUserData(username, password, email) {
 
 
