@@ -19,8 +19,8 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    savedScore:[scoreSchema]
-    
+    savedScore: [scoreSchema]
+
   },
   // set this to use virtual below
   {
