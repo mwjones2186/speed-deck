@@ -4,9 +4,10 @@ import Timer from "./Timer";
 
 
 
-export default function LevelOne() {
+export default function Level() {
   const [questionStart, setQuestionStart] = useState(false);
   const [stopTimer, setStopTimer] = useState(false)
+  const [levelState, setLevelState] = useState('')
   let timerId;
   return (
     <div className="levelDiv">
