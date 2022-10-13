@@ -56,9 +56,11 @@
 }
 
 .signInBtn {
-    color: #FFF;
+    color: green;
     transition: all 0.5s;
     position: relative; 
+    border-radius: 5px;
+    padding: 5px;
   }
   .signInBtn span {
     z-index: 2; 

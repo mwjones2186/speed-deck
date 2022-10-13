@@ -22,6 +22,8 @@ input {
     width: 80%;
     margin-left: 50px;
     margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 7px;
 }
 
 h1 {
