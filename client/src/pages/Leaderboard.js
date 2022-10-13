@@ -25,21 +25,27 @@ export default function Leaderboard () {
                 <tbody>
                     <tr>
                         <td className="Rank">1</td>
-                        <td className="Name">Placeholder</td>
+                        <td className="Name">Koda</td>
                         <td className="Country">USA</td>
-                        <td className="Score">12.2</td>
+                        <td className="Score">4566</td>
                     </tr>
                     <tr>
                         <td className="Rank">2</td>
-                        <td className="Name">Placeholder</td>
+                        <td className="Name">Mike</td>
                         <td className="Country">USA</td>
-                        <td className="Score">12.3</td>
+                        <td className="Score">5342</td>
                     </tr>
                     <tr>
                         <td className="Rank">3</td>
-                        <td className="Name">Placeholder</td>
-                        <td className="Country">USA</td>
-                        <td className="Score">12.4</td>
+                        <td className="Name">Kaeden</td>
+                        <td className="Country">Uganda</td>
+                        <td className="Score">5469</td>
+                    </tr>
+                    <tr>
+                        <td className="Rank">4</td>
+                        <td className="Name">Hunter</td>
+                        <td className="Country">Slovakia</td>
+                        <td className="Score">6052</td>
                     </tr>
                 </tbody>
             </table>

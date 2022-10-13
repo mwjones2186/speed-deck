@@ -64,3 +64,19 @@
 .oneVone:hover {
     font-size: 0px;
 }
+
+
+@media (max-width: 1200px) {
+    .threeBtn {
+        width: 51%;
+        margin: 0 0 5% 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .threeBtn {
+        width: 80%;
+        height: 200%;
+        margin: 0 0 5% 0;
+    }
+}

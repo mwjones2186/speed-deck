@@ -21,7 +21,7 @@ export default function Navigation(props) {
                         <NavLink className='navItem' href='/profile'>Profile</NavLink>
                         <NavLink className='navItem' href='/leaderboard'>Leaderboard</NavLink>
                         {/* <NavLink className='navItem' href='/progress'>Progress</NavLink> */}
-                        <NavLink className='navItem login' href='/signup'>Logout</NavLink>
+                        <NavLink className='navItem login' href='/signup'>Login/Signup</NavLink>
                     </Nav>
                 </div>
             </Navbar.Collapse>
