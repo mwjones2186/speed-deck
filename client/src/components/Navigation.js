@@ -29,24 +29,24 @@ export default function Navigation(props) {
     )
 }
 
-function UserLoggedOut(props) {
-    return (
-        <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
-            <Navbar.Toggle aria-controls='navbarScroll' data-bs-target='#navbarScroll' />
-            <Navbar.Collapse id='navbarScroll'>
-                <NavLink to='/' className='h1Wrap'>
-                    <h1 className='navh1'>SpeedDeck</h1>
-                </NavLink>
-                <div className='wrap'>
-                    <Nav className='navWrap'>
-                        <NavLink className='navItem' href='/'>Home</NavLink>
-                        <NavLink className='navItem login' href='/signup'>Login/SignUp</NavLink>
-                    </Nav>
-                </div>
-            </Navbar.Collapse>
-        </Navbar>
-    )
-}
+// function UserLoggedOut(props) {
+//     return (
+//         <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+//             <Navbar.Toggle aria-controls='navbarScroll' data-bs-target='#navbarScroll' />
+//             <Navbar.Collapse id='navbarScroll'>
+//                 <NavLink to='/' className='h1Wrap'>
+//                     <h1 className='navh1'>SpeedDeck</h1>
+//                 </NavLink>
+//                 <div className='wrap'>
+//                     <Nav className='navWrap'>
+//                         <NavLink className='navItem' href='/'>Home</NavLink>
+//                         <NavLink className='navItem login' href='/signup'>Login/SignUp</NavLink>
+//                     </Nav>
+//                 </div>
+//             </Navbar.Collapse>
+//         </Navbar>
+//     )
+// }
 
 
 

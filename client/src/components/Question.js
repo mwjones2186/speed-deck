@@ -2,9 +2,9 @@ import '../css/question.css'
 import { useEffect, useState } from "react";
 export default function Question({ level, timerId, setStopTimer, setQuestionStart }) {
   const [numbers, setNumbers] = useState({ num1: 0, num2: 0 });
-  const [correctAnwer, setCorrectAnswer] = useState();
-  const [questionState, setQuestionState] = useState("");
-  const [errorMessage, setErrorMessage] = useState("Correct");
+  // const [correctAnwer, setCorrectAnswer] = useState();
+  // const [questionState, setQuestionState] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("Correct");
   const [count, setCount] = useState(0);
   const [questionCount, setQuestionCount] = useState(count);
   const [opxState, setOpx] = useState("");
@@ -14,7 +14,7 @@ export default function Question({ level, timerId, setStopTimer, setQuestionStar
 
   useEffect(() => {
     generateQuestion();
-  }, []);
+  },);
 
   const generateQuestion = () => {
     let num1;
