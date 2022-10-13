@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-container {
+    align-items: center;
+    border: border-box;
+    justify-content: center;
+    margin-top: 200px;
+    background-color: #aaa;
+    max-width: 800px;
+    margin: 5rem auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 5px rgb(136, 255, 136);
+}
+
+input {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(0, 172, 66);
+}
+
+.timer {
+    color:chartreuse
+}
+
+
+

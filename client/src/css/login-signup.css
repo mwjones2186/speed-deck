@@ -1,0 +1,154 @@
+.pageWrap {
+    width:100%;
+    padding: 10%;
+}
+
+.row {
+    width: 100%;
+}
+
+.signup {
+    text-align: center;
+    margin:0;
+    border-left: 1px solid;
+    padding: 10px;
+}
+
+.signup h1 {
+    color: white;
+}
+.signup p {
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    padding: 10px;
+
+}
+
+.login h1 {
+    text-align: center;
+    margin: 10px;
+    color:white
+
+}
+
+#loginEmail,
+#email,
+#loginPassword,
+#password,
+#rePassword,
+#username {
+    display: block;
+    width: 50%;
+    margin: 0 auto 10px auto;
+    border-radius: 7px;
+}
+
+.signInBtn {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.signInBtn {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative; 
+  }
+  .signInBtn span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+  .signInBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .signInBtn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .signInBtn:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .signInBtn:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+  }
+
+
+  .signUpBtn {
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+    position: relative; 
+  }
+  .signUpBtn span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+  .signUpBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .signUpBtn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .signUpBtn:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .signUpBtn:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+  }
+
+@media (max-width: 500px), screen and (orientation: portrait) {
+.signup{
+    border-left: none;
+    border-top: 1px solid;
+}
+}
