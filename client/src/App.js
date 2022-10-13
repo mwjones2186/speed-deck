@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
+// import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import Home from "./pages/Home";
 import Leaderboard from "./pages/Leaderboard";
 import Profile from "./pages/Profile";
@@ -7,6 +8,7 @@ import Progress from "./pages/Progress";
 import Login from "./pages/Login-signup";
 import Level from "./components/Level";
 import "./css/app.css";
+import Footer from "./pages/Footer";
 import Gameplay from "./pages/GameScreen";
 import {
   ApolloClient,
