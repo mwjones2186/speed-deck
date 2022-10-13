@@ -5,9 +5,9 @@ import { SAVE_SCORE } from "../utils/mutations";
 import Auth from "../utils/auth";
 
 export default function Timer({ timerId, stopTimer }) {
-  // const minutes = 0;
-  // let seconds = 0;
-  // const [[mins, secs], setTimer] = useState([minutes, seconds]);
+  const minutes = 0;
+  let seconds = 0;
+  const [[mins, secs], setTimer] = useState([minutes, seconds]);
   const [time, setTime] = useState(0);
   const [saveScore, {error }] = useMutation(SAVE_SCORE);
 
